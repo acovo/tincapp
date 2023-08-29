@@ -21,7 +21,7 @@ plugins {
   id 'kotlin-android'
   id 'kotlin-android-extensions'
   id 'kotlin-kapt'
-  id 'com.github.triplet.play' version '2.1.0'
+  //id 'com.github.triplet.play' version '2.1.0'
 }
 
 def keystorePropertiesFile = rootProject.file("keystore.properties")
@@ -97,8 +97,8 @@ repositories {
   google()
 }
 
-play {
-  if (keystoreAvailable) serviceAccountCredentials = file(keystoreProperties['apiKeyFile'])
-  track = 'beta'
-  resolutionStrategy = "auto"
-}
+//play {
+//  if (keystoreAvailable) serviceAccountCredentials = file(keystoreProperties['apiKeyFile'])
+//  track = 'beta'
+//  resolutionStrategy = "auto"
+//}

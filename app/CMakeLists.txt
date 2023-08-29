@@ -54,7 +54,8 @@ ExternalProject_Add(libressl
 
 ExternalProject_Add(tinc
   DEPENDS           lzo libressl
-  URL               https://tinc-vpn.org/packages/tinc-1.1pre18.tar.gz
+  #URL               https://tinc-vpn.org/packages/tinc-1.1pre18.tar.gz
+  URL               http://127.0.0.1/tinc-1.1pre18.tar.gz
   URL_HASH          SHA256=2757ddc62cf64b411f569db2fa85c25ec846c0db110023f6befb33691f078986
   CONFIGURE_COMMAND autoreconf -fsi <SOURCE_DIR> &&
                     <SOURCE_DIR>/configure ${xCONFIG}
